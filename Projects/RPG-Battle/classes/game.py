@@ -26,8 +26,8 @@ class Person:
         self.atk = atk
         self.atkl = atk - 10
         self.atkh = atk + 10
-        self.df = df    # defence points
-        self.magic = magic    # magics abilities
+        self.df = df 
+        self.magic = magic  
         self.items = items
 		self.actions = ["Attack", "Magic", "Items"]
 
