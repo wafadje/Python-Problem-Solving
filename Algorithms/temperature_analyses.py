@@ -9,12 +9,14 @@ n = int(input())  # the number of temperatures to analyse
 for i in input().split():
     arr.append(int(i))
  
+if arr == []:
+    print(0)
+else:
+    Val_min = min([ abs(e) for e in arr])
+    if Val_min in arr and -Val_min in arr:
+        print(Val_min)
+    elif  -Val_min in arr :
+        print(-Val_min)
+    elif  Val_min in arr :
+        print(Val_min)
 
-Val_min = min([ abs(e) for e in arr])
-if Val_min in arr and -Val_min in arr:
-    print(Val_min)
-elif  -Val_min in arr :
-    print(-Val_min)
-elif  Val_min in arr :
-    print(Val_min)
-    
