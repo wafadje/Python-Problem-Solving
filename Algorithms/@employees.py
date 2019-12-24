@@ -1,18 +1,18 @@
 class Employee:
-  
-  def __init__(self, fname, lname, comp):
-    self.fname = fname
-    self.lname = lname
-    self.comp = comp
+    
+    def __init__(self, fname, lname, comp):
+        self.fname = fname
+        self.lname = lname
+        self.comp = comp
+    
+    def fullname(self):
+        return '{} {}'.format(self.fname, self.lname)
     
     
-   def email(self):
-    return self.fname + '.' + self.lname + '@' + self.comp + '.com'
+    
+    def email(self):
+        return self.fname + '.' + self.lname + '@' + self.comp + '.com'
   
-  def fullname(self):
-    return '{} {}'.format(self.fname, self.lname)
-
-
 
 emp_1 = Employee('alan', 'preciado', 50)
 emp_2 = Employee('dania', 'arce', 60)
